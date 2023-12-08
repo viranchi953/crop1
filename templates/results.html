@@ -1,0 +1,20 @@
+<!-- results.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Prediction Results</title>
+</head>
+<body>
+    <h1>Crop Prediction Results page</h1>
+
+    <h2>Top 5 recommended crops with scaled probabilities:</h2>
+    <ul>
+        {% for crop, scaled_prob in crops_with_scaled_proba[:5] %}
+            <li>Crop: {{ crop }}, Scaled Probability: {{ scaled_prob }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

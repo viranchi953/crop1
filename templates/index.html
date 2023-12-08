@@ -1,3 +1,5 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,6 +47,7 @@
             {% for crop, scaled_prob in crops_with_scaled_proba[:5] %}
                 <li>Crop: {{ crop }}, Scaled Probability: {{ scaled_prob }}</li>
             {% endfor %}
+            <p><a href="/results">View All Results</a></p>
         </ul>
     {% endif %}
 </body>
